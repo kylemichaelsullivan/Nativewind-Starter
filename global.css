@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--color-dark: #111827;
+	--color-light: #f3f4f6;
+	--background: var(--color-light);
+	--text: var(--color-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: var(--color-dark);
+		--text: var(--color-light);
+	}
+}
+
+html {
+	background-color: var(--background);
+	color-scheme: light dark;
+}
+
+body {
+	background-color: var(--background);
+	color: var(--text);
+}
+
+* {
+	fill: var(--text);
+}
+
+.text-foreground {
+	color: var(--text) !important;
+}
+
+.bg-background {
+	background-color: var(--background) !important;
+}
+
+.dark {
+	--background: var(--color-dark);
+	--text: var(--color-light);
+}
+
+.light {
+	--background: var(--color-light);
+	--text: var(--color-dark);
+}
+
+/* React Native Web text styling */
+[dir='auto'] {
+	color: var(--text);
+	background-color: transparent;
+}
