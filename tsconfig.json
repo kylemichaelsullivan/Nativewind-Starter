@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./*"],
+			"@components/*": ["components/*"],
+			"@screens/*": ["screens/*"],
+			"@assets/*": ["assets/*"],
+			"@context/*": ["context/*"],
+			"@data/*": ["data/*"],
+			"@types/*": ["types/*"]
+		},
+		"jsx": "react-native",
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "esnext",
+		"lib": ["esnext", "dom", "dom.iterable"],
+		"allowJs": true,
+		"noEmit": true,
+		"isolatedModules": true
+	},
+	"extends": "expo/tsconfig.base"
+}
