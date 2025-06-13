@@ -29,5 +29,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: ['expo-router'],
+	plugins: [] /* ['expo-router'], */,
 };
