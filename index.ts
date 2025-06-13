@@ -1,7 +1,7 @@
 import { registerRootComponent } from 'expo';
 
-import App from '@/components/App';
+import App from './App';
 
-import '@/global.css';
+import './global.css';
 
 registerRootComponent(App);
