@@ -1,12 +1,13 @@
 {
-  "extends": "expo/tsconfig.base",
+  "extends": "expo/tsconfig.base.json",
   "compilerOptions": {
     "strict": true,
     "jsx": "react-jsx",
-
-    "baseUrl": ".",
+    "module": "ESNext",
+    "forceConsistentCasingInFileNames": true,
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["./src/*"],
+      "components/*": ["./components/*"]
     }
   }
 }
